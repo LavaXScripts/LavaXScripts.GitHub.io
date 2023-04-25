@@ -7,19 +7,13 @@
 
 [LavaX Beta Gui Test Script](https://raw.githubusercontent.com/LavaXScripts/LavaXPrivate/main/LavaXPrivate)
 
-![Hacker](https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=florian-olivo-4hbJ-eymZ1o-unsplash.jpg)
+![Hacker](https://nortonsafe.search.ask.com/search?q=roblox+hacking+photo&page=1&ctype=pictures&doi=2019-04-04&o=APN12178&p2=%5EEQ%5Efd00us%5E&ueid=6d2fc958-dc2f-4b72-949a-d78ebab8a2bb)
 Features
-+ Pls Donate
-+ Blox Fruits
-+ Bedwars
-+ My Restraunt 
-+ Encounters
-+ Pet Sim X
-+ Dungeon Quest
-+ Bee Swarm Sim
-body {
-  font-family: 'Luckies tGuy';
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-}
++ Pls Donate Hub
++ Blox Fruits Hub
++ Bedwars Hub
++ My Restraunt Hub
++ Encounters Hub
++ Pet Sim X Hub
++ Dungeon Quest Hub
++ Bee Swarm Sim Hub
