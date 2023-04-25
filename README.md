@@ -18,7 +18,7 @@ Features
 + Dungeon Quest
 + Bee Swarm Sim
 body {
-  font-family: 'LuckiestGuy';
+  font-family: 'Luckies tGuy';
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
