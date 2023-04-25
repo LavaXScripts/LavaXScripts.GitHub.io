@@ -7,7 +7,7 @@
 
 [LavaX Beta Gui Test Script](https://raw.githubusercontent.com/LavaXScripts/LavaXPrivate/main/LavaXPrivate)
 
-![Hacker](https://nortonsafe.search.ask.com/search?q=roblox+hacking+photo&page=1&ctype=pictures&doi=2019-04-04&o=APN12178&p2=%5EEQ%5Efd00us%5E&ueid=6d2fc958-dc2f-4b72-949a-d78ebab8a2bb)
+![Hack Roblox](https://nortonsafe.search.ask.com/search?q=roblox+hacking+photo&page=1&ctype=pictures&doi=2019-04-04&o=APN12178&p2=%5EEQ%5Efd00us%5E&ueid=6d2fc958-dc2f-4b72-949a-d78ebab8a2bb)
 Features
 + Pls Donate Hub
 + Blox Fruits Hub
