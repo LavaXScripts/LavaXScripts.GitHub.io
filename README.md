@@ -9,7 +9,7 @@
 
 ![Hack Roblox](https://i.ytimg.com/vi/Ltu9IdH1zVE/maxresdefault.jpg)
 Features
-| Bedwars| Bedwars Hub|
-| Blox Fruits| Blox Fruits Hub|
-| Pet Sim X| Pet Sim X Hub|
+|Bedwars||Bedwars Hub|
+|Blox Fruits||Blox Fruits Hub|
+|Pet Sim X||Pet Sim X Hub|
 Ect...
