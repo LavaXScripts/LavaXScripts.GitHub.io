@@ -1,4 +1,4 @@
-#LavaX Beta V1.0
+# LavaX Beta V1.0
 # Presenting LavaX The Perfect Script
 ## This Is The Official LavaXScripts Website Made By Lava_01
 ### Working Hubs Coming Soon
