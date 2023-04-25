@@ -9,11 +9,7 @@
 
 ![Hack Roblox](https://i.ytimg.com/vi/Ltu9IdH1zVE/maxresdefault.jpg)
 Features
-+ Pls Donate Hub
-+ Blox Fruits Hub
-+ Bedwars Hub
-+ My Restraunt Hub
-+ Encounters Hub
-+ Pet Sim X Hub
-+ Dungeon Quest Hub
-+ Bee Swarm Sim Hub
+| Bedwars| Bedwars Hub|
+| Blox Fruits| Blox Fruits Hub|
+| Pet Sim X| Pet Sim X Hub|
+Ect...
