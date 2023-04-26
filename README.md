@@ -8,7 +8,7 @@
 
 [LavaX Beta Gui Test Script](https://raw.githubusercontent.com/LavaXScripts/LavaXPrivate/main/LavaXPrivate)
 
-![Hack Roblox](https://i.ytimg.com/vi/Ltu9IdH1zVE/maxresdefault.jpg)
+![Hack Roblox](https://images.unsplash.com/photo-1637466828537-8124def82012?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=eugene-golovesov-gYtVGmtvOYo-unsplash.jpg)
 Features
 + Blox Fruits Hub
 + Bedwars Hub
