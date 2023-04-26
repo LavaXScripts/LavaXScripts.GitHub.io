@@ -18,4 +18,4 @@ Features
 + Encounters Hub
 + Dungeon Quest Hub
 + My Restraunt Hub
-More Features Coming Soon!
+## More Features Coming Soon!
