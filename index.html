@@ -11,9 +11,28 @@
     
     /* Set background color and font styles */
     body {
-      background-color: #000000;
       font-family: Arial, sans-serif;
       color: white; /* Change the text color to white */
+      overflow: hidden; /* Hide the overflowing background */
+    }
+
+    /* Moving background animation */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #ff0000, #00ff00, #0000ff);
+      background-size: 300% 300%;
+      animation: gradientAnimation 10s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
     
     /* Main container styles */
@@ -71,7 +90,7 @@
 <body>
   <div class="container">
     <h1>Welcome to the LavaX Beta Website</h1>
-    <p>Please choose an option for either the Script or Home and Features to begin
+    <p>Please choose an option for either the Script or Home and Features to begin</p>
     <ul>
       <li><a href="https://lavaxscripts.github.io/Lol/">Home</a></li>
       <li><a href="https://lavaxscripts.github.io/Lol/features.html">Features</a></li>
