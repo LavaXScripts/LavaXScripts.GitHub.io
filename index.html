@@ -1,1 +1,88 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moving Solar System</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    #container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+    
+    .planet {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #e6e6e6;
+    }
+    
+    .sun {
+      width: 120px;
+      height: 120px;
+      background-color: #ffd700;
+      border-radius: 50%;
+      animation: rotate-sun 10s linear infinite;
+    }
+    
+    .earth {
+      width: 60px;
+      height: 60px;
+      background-color: #1976d2;
+      border-radius: 50%;
+      animation: rotate-earth 6s linear infinite;
+    }
+    
+    .moon {
+      width: 30px;
+      height: 30px;
+      background-color: #bdbdbd;
+      border-radius: 50%;
+      animation: rotate-moon 3s linear infinite;
+    }
+    
+    @keyframes rotate-sun {
+      0% {
+        transform: translate(-50%, -50%) rotate(0);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(1turn);
+      }
+    }
+    
+    @keyframes rotate-earth {
+      0% {
+        transform: translate(-50%, -50%) rotate(0);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(1turn);
+      }
+    }
+    
+    @keyframes rotate-moon {
+      0% {
+        transform: translate(-50%, -50%) rotate(0);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(1turn);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="planet sun"></div>
+    <div class="planet earth"></div>
+    <div class="planet moon"></div>
+  </div>
+</body>
+</html>
