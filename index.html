@@ -1,88 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Moving Solar System</title>
+  <title>Startup Menu</title>
   <style>
-    body {
+    /* Reset default margin and padding */
+    body, h1, ul, li {
       margin: 0;
       padding: 0;
-      overflow: hidden;
     }
     
-    #container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
+    /* Set background color and font styles */
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
     }
     
-    .planet {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background-color: #e6e6e6;
+    /* Main container styles */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
     }
     
-    .sun {
-      width: 120px;
-      height: 120px;
-      background-color: #ffd700;
-      border-radius: 50%;
-      animation: rotate-sun 10s linear infinite;
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
     }
     
-    .earth {
-      width: 60px;
-      height: 60px;
-      background-color: #1976d2;
-      border-radius: 50%;
-      animation: rotate-earth 6s linear infinite;
+    ul {
+      list-style-type: none;
     }
     
-    .moon {
-      width: 30px;
-      height: 30px;
-      background-color: #bdbdbd;
-      border-radius: 50%;
-      animation: rotate-moon 3s linear infinite;
+    li {
+      margin-bottom: 10px;
     }
     
-    @keyframes rotate-sun {
-      0% {
-        transform: translate(-50%, -50%) rotate(0);
-      }
-      100% {
-        transform: translate(-50%, -50%) rotate(1turn);
-      }
+    a {
+      color: #333;
+      text-decoration: none;
     }
     
-    @keyframes rotate-earth {
-      0% {
-        transform: translate(-50%, -50%) rotate(0);
-      }
-      100% {
-        transform: translate(-50%, -50%) rotate(1turn);
-      }
+    .button {
+      display: block;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
     
-    @keyframes rotate-moon {
-      0% {
-        transform: translate(-50%, -50%) rotate(0);
-      }
-      100% {
-        transform: translate(-50%, -50%) rotate(1turn);
-      }
+    .button:hover {
+      background-color: #555;
     }
   </style>
 </head>
 <body>
-  <div id="container">
-    <div class="planet sun"></div>
-    <div class="planet earth"></div>
-    <div class="planet moon"></div>
+  <div class="container">
+    <h1>Welcome to Startup Menu</h1>
+    
+    <ul>
+      <li><a href="#" class="button">Option 1</a></li>
+      <li><a href="#" class="button">Option 2</a></li>
+      <li><a href="#" class="button">Option 3</a></li>
+      <li><a href="#" class="button">Option 4</a></li>
+      <li><a href="#" class="button">Option 5</a></li>
+    </ul>
   </div>
 </body>
 </html>
