@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: #333;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      animation: slide-in 0.5s ease forwards;
+    }
 
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: slide-in 0.5s ease forwards;
+    }
+
+    .back-button:hover {
+      background-color: #444;
+    }
+
+    .font-change {
+      font-family: Poppins, sans-serif;
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: slide-in 0.5s ease forwards;
+    }
+
+    .box {
+      background-color: #000000;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: justify;
+      width: 20%;
+      height: 60%;
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: slide-in 0.5s ease forwards;
+    }
+
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="https://lavaxscripts.github.io/Lol/" class="back-button">Back</a>
+  <h1 class="font-change">Features</h1>
+  <p class="font-change">These are all the Features/Script hubs available in the ToolHub</p>
+
+  <div class="box">
+    <ol>
+      <li>Bedwars</li>
+      <li>Blox Fruits</li>
+      <li>Pls Donate</li>
+      <li>My Restraunt</li>
+      <li>Encounters</li>
+      <li>Bee Swarm Sim</li>
+      <li>PSX</li>
+      <li>Dungeon Quest</li>
+    </ol>
+  </div>
+
+  <script>
+    // Add an event listener to trigger the animation after the page loads
+    window.addEventListener('load', function() {
+      var backButton = document.querySelector('.back-button');
+      var headings = document.querySelectorAll('.font-change');
+      var box = document.querySelector('.box');
+
+      backButton.style.opacity = '1';
+      backButton.style.transform = 'translateX(0)';
+
+      headings.forEach(function(heading) {
+        heading.style.opacity = '1';
+        heading.style.transform = 'translateX(0)';
+      });
+
+      box.style.opacity = '1';
+      box.style.transform = 'translateX(0)';
+    });
+  </script>
+</body>
+</html>
