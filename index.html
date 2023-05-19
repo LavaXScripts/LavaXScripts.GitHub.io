@@ -22,6 +22,21 @@
       margin: 0 auto;
       padding: 20px;
       text-align: center;
+      opacity: 0; /* Initially set opacity to 0 */
+      transform: translateX(-50%); /* Move the container to the left */
+      animation: slideIn 1s forwards; /* Apply the sliding animation */
+    }
+    
+    /* Keyframe animation */
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-50%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
     
     h1 {
@@ -62,5 +77,13 @@
       <li><a href="https://raw.githubusercontent.com/LavaXScripts/LavaXPrivate/main/LavaXPrivate">Script</a></li>
     </ul>
   </div>
+
+  <script>
+    // Add an event listener to trigger the animation after the page loads
+    window.addEventListener('load', function() {
+      var container = document.querySelector('.container');
+      container.style.opacity = 1; // Set opacity to 1 to start the animation
+    });
+  </script>
 </body>
 </html>
