@@ -72,23 +72,52 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(45deg, #ff0000, #ff3d00, #ff7600, #ffae00, #ffd600);
-      background-size: 400% 400%;
-      animation: animateBackground 10s ease infinite;
+      background-color: #000;
+      overflow: hidden;
     }
     
-    @keyframes animateBackground {
+    .numbers {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+    
+    .number {
+      font-size: 24px;
+      color: #00ff00;
+      position: absolute;
+      animation: fall 1s linear infinite;
+    }
+    
+    @keyframes fall {
       0% {
-        background-position: 0% 50%;
+        top: -10px;
+        opacity: 0;
       }
       100% {
-        background-position: 100% 50%;
+        top: 100%;
+        opacity: 1;
       }
     }
   </style>
 </head>
 <body>
-  <div class="background"></div>
+  <div class="background">
+    <div class="numbers">
+      <span class="number">0</span>
+      <span class="number">1</span>
+      <span class="number">2</span>
+      <span class="number">3</span>
+      <span class="number">4</span>
+      <span class="number">5</span>
+      <span class="number">6</span>
+      <span class="number">7</span>
+      <span class="number">8</span>
+      <span class="number">9</span>
+    </div>
+  </div>
   <div class="container">
     <h1>Welcome to the LavaX Beta Website</h1>
     <p>Please choose an option for either the Script or Home and Features to begin.</p>
@@ -104,6 +133,12 @@
     window.addEventListener('load', function() {
       var container = document.querySelector('.container');
       container.style.opacity = 1; // Set opacity to 1 to start the animation
+      
+      var numbers = document.querySelectorAll('.number');
+      numbers.forEach(function(number) {
+        var randomNumber = Math.floor(Math.random() * 10);
+        number.textContent = randomNumber;
+      });
     });
   </script>
 </body>
