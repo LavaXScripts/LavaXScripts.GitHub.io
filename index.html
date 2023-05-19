@@ -74,53 +74,71 @@
       height: 100%;
       background-color: #000;
       overflow: hidden;
-    }
-    
-    .numbers {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
       pointer-events: none;
     }
     
-    .number {
-      font-size: 24px;
-      color: #00ff00;
+    .matrix-rain {
       position: absolute;
-      animation: fall 1s linear infinite;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
     }
     
-    @keyframes fall {
+    .matrix-column {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    
+    .matrix-digit {
+      font-size: 12px;
+      opacity: 0.1;
+      animation: matrixRain 3s linear infinite;
+    }
+    
+    @keyframes matrixRain {
       0% {
-        top: -10px;
-        opacity: 0;
+        opacity: 0.1;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
       }
       100% {
-        top: 100%;
-        opacity: 1;
+        opacity: 0.1;
       }
     }
   </style>
 </head>
 <body>
   <div class="background">
-    <div class="numbers">
-      <span class="number">0</span>
-      <span class="number">1</span>
-      <span class="number">2</span>
-      <span class="number">3</span>
-      <span class="number">4</span>
-      <span class="number">5</span>
-      <span class="number">6</span>
-      <span class="number">7</span>
-      <span class="number">8</span>
-      <span class="number">9</span>
+    <div class="matrix-rain">
+      <div class="matrix-column">
+        <span class="matrix-digit">0</span>
+        <span class="matrix-digit">1</span>
+        <span class="matrix-digit">2</span>
+        <span class="matrix-digit">3</span>
+        <span class="matrix-digit">4</span>
+        <span class="matrix-digit">5</span>
+        <span class="matrix-digit">6</span>
+        <span class="matrix-digit">7</span>
+        <span class="matrix-digit">8</span>
+        <span class="matrix-digit">9</span>
+      </div>
     </div>
   </div>
+  
   <div class="container">
     <h1>Welcome to the LavaX Beta Website</h1>
-    <p>Please choose an option for either the Script or Home and Features to begin.</p>
+    <p>Please choose an option for either the Script or Home and Features to begin
     <ul>
       <li><a href="https://lavaxscripts.github.io/Lol/">Home</a></li>
       <li><a href="https://lavaxscripts.github.io/Lol/features.html">Features</a></li>
@@ -133,12 +151,6 @@
     window.addEventListener('load', function() {
       var container = document.querySelector('.container');
       container.style.opacity = 1; // Set opacity to 1 to start the animation
-      
-      var numbers = document.querySelectorAll('.number');
-      numbers.forEach(function(number) {
-        var randomNumber = Math.floor(Math.random() * 10);
-        number.textContent = randomNumber;
-      });
     });
   </script>
 </body>
