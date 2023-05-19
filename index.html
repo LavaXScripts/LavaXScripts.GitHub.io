@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Startup Menu with Blurred Background</title>
+  <title>Startup Menu</title>
   <style>
     /* Reset default margin and padding */
     body, h1, ul, li {
@@ -11,8 +11,7 @@
     
     /* Set background color and font styles */
     body {
-      background-image: url('background-image.jpg'); /* Replace with your desired background image */
-      background-size: cover;
+      background-color: #f2f2f2;
       font-family: Arial, sans-serif;
     }
     
@@ -21,14 +20,13 @@
       max-width: 600px;
       margin: 0 auto;
       padding: 20px;
-      backdrop-filter: blur(10px); /* Apply the blur effect */
-      background-color: rgba(255, 255, 255, 0.7); /* Adjust the opacity as needed */
+      color: #333;
+      text-align: center;
     }
     
     h1 {
       font-size: 24px;
       margin-bottom: 20px;
-      text-align: center;
     }
     
     ul {
@@ -40,35 +38,28 @@
     }
     
     a {
-      color: #333;
-      text-decoration: none;
-    }
-    
-    .button {
-      display: block;
-      padding: 10px;
+      display: inline-block;
+      padding: 10px 20px;
       background-color: #333;
       color: #fff;
-      text-align: center;
+      text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
     }
     
-    .button:hover {
+    a:hover {
       background-color: #555;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Startup Menu</h1>
-    
+    <h1>Welcome to the Startup Menu</h1>
     <ul>
-      <li><a href="#" class="button">Option 1</a></li>
-      <li><a href="#" class="button">Option 2</a></li>
-      <li><a href="#" class="button">Option 3</a></li>
-      <li><a href="#" class="button">Option 4</a></li>
-      <li><a href="#" class="button">Option 5</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </body>
