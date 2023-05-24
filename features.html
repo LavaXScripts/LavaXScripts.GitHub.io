@@ -10,32 +10,48 @@
       color: white;
       font-family: 'Montserrat', sans-serif;
       animation: slide-in 0.5s ease forwards;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: slide-in 0.5s ease forwards;
+    }
+
+    .back-button:hover {
+      background-color: #444;
+    }
+
+    .font-change {
+      font-family: Poppins, sans-serif;
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: slide-in 0.5s ease forwards;
     }
 
     .box {
       background-color: #000000;
       padding: 20px;
       border-radius: 10px;
-      text-align: center;
+      text-align: justify;
+      width: 20%;
+      height: 60%;
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: slide-in 0.5s ease forwards;
     }
 
     .emoji {
       font-size: 80px;
       margin-bottom: 20px;
-    }
-
-    .feature-list {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .feature-list li {
-      margin-bottom: 10px;
+      text-align: center;
     }
 
     @keyframes slide-in {
@@ -48,28 +64,40 @@
         transform: translateX(0);
       }
     }
+
+    @keyframes ambient-background {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100% 0;
+      }
+    }
   </style>
 </head>
 <body>
+  <a href="https://lavaxscripts.github.io/home" class="back-button">Back</a>
+  <h1 class="font-change">Features</h1>
   <div class="box">
-    <h1>Features</h1>
-    <ul class="feature-list">
-      <li>Bedwars</li>
-      <li>Blox Fruits</li>
-      <li>Pls Donate</li>
-      <li>My Restaurant</li>
-      <li>Encounters</li>
-      <li>Bee Swarm Sim</li>
-      <li>PSX</li>
-      <li>Dungeon Quest</li>
-    </ul>
+    <p class="font-change">These are all the Features/Script hubs available in the ToolHub</p>
     <div class="emoji">🤓</div>
   </div>
 
   <script>
     // Add an event listener to trigger the animation after the page loads
     window.addEventListener('load', function() {
+      var backButton = document.querySelector('.back-button');
+      var headings = document.querySelectorAll('.font-change');
       var box = document.querySelector('.box');
+
+      backButton.style.opacity = '1';
+      backButton.style.transform = 'translateX(0)';
+
+      headings.forEach(function(heading) {
+        heading.style.opacity = '1';
+        heading.style.transform = 'translateX(0)';
+      });
+
       box.style.opacity = '1';
       box.style.transform = 'translateX(0)';
     });
