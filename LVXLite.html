@@ -22,7 +22,7 @@
       transform: translate(-50%, -50%);
       pointer-events: none;
       animation-name: bubble;
-      animation-duration: 6s;
+      animation-duration: 2s;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
     }
@@ -43,11 +43,53 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="bubble">&#x1F913;</div>
-    <div class="bubble">&#x1F913;</div>
-    <div class="bubble">&#x1F913;</div>
-    <!-- Add more bubbles here -->
-  </div>
+  <div class="container"></div>
+
+  <script>
+    // Number of bubbles to create
+    var numBubbles = 100;
+    
+    // Delay between bubble appearances (in milliseconds)
+    var bubbleDelay = 1000;
+    
+    // Function to generate a random number within a range
+    function getRandomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    
+    // Function to create a bubble element
+    function createBubble() {
+      var bubble = document.createElement('div');
+      bubble.className = 'bubble';
+      bubble.innerHTML = '&#x1F913;';
+      
+      var container = document.querySelector('.container');
+      container.appendChild(bubble);
+      
+      // Set random position for the bubble
+      var containerWidth = container.offsetWidth;
+      var containerHeight = container.offsetHeight;
+      var posX = getRandomNumber(0, containerWidth);
+      var posY = getRandomNumber(0, containerHeight);
+      
+      bubble.style.left = posX + 'px';
+      bubble.style.top = posY + 'px';
+      
+      // Remove the bubble after the animation ends
+      bubble.addEventListener('animationend', function() {
+        container.removeChild(bubble);
+      });
+    }
+    
+    // Function to continuously create bubbles
+    function generateBubbles() {
+      setInterval(function() {
+        createBubble();
+      }, bubbleDelay);
+    }
+    
+    // Start generating bubbles
+    generateBubbles();
+  </script>
 </body>
 </html>
