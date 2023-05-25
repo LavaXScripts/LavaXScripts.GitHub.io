@@ -21,5 +21,38 @@
 <body>
     <h1>Want LavaX? Pay For It Here Only 5 Robux!</h1>
     <p>First go into Pls Donate on roblox, Then go to the offline donation button on the side of your screen. Now type in the user LavaXScripts after that when you see his stand donate 5 robux. After that send a message to LavaXScripts@gmail.com that says you donated to him and your username so i can verify then i will send you the script through mail those are all the steps</p>
+    <script>
+        function createFloatingText() {
+            var text = document.createElement('div');
+            text.className = 'floating-text';
+            text.innerText = 'Want LavaX? BUY IT HERE!';
+            
+            // Set initial position
+            var posX = Math.random() * (window.innerWidth - text.offsetWidth);
+            var posY = Math.random() * (window.innerHeight - text.offsetHeight);
+            text.style.left = posX + 'px';
+            text.style.top = posY + 'px';
+            
+            // Add animation
+            text.animate(
+                [
+                    { opacity: 0 },
+                    { opacity: 1 },
+                    { opacity: 1 },
+                    { opacity: 0 }
+                ],
+                {
+                    duration: 3000,
+                    iterations: Infinity
+                }
+            );
+            
+            // Append text to the body
+            document.body.appendChild(text);
+        }
+        
+        // Create floating texts every second
+        setInterval(createFloatingText, 1000);
+    </script>
 </body>
 </html>
