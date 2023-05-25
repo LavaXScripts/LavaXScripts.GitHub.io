@@ -2,16 +2,6 @@
 <html>
 <head>
   <style>
-    /* CSS Styles */
-    body {
-      font-family: Montserrat, sans-serif;
-    }
-
-    .white-text {
-      color: white;
-    }
-  </style>
-  <style>
     body {
       margin: 0;
       overflow: hidden;
@@ -50,11 +40,30 @@
         transform: translate(-50%, -50%) scale(1.5);
       }
     }
+    
+    .centered-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+    }
   </style>
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </head>
 <body>
-  <h1 class="white-text">LavaX Lite Coming Soon!</h1>
-  <div class="container"></div>
+  <div class="container">
+    <div class="bubble">&#x1F913;</div>
+    <div class="bubble">&#x1F913;</div>
+    <div class="bubble">&#x1F913;</div>
+    <!-- Add more bubbles here -->
+    <div class="centered-text">
+      <h1>Centered Text</h1>
+    </div>
+  </div>
 
   <script>
     // Number of bubbles to create
