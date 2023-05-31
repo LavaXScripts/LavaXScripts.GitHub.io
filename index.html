@@ -64,7 +64,7 @@
       background-color: #555;
     }
     
-    /* Moving Background with Moving Magma */
+    /* Moving Background with Realistic Flames */
     .moving-background {
       position: fixed;
       top: 0;
@@ -72,12 +72,11 @@
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: linear-gradient(45deg, #FF2C00, #FF5E00, #FF8F00, #FFC100, #FFEF00, #FFC100, #FF8F00, #FF5E00, #FF2C00);
-      background-size: 300% 300%;
-      animation: moveMagma 10s linear infinite;
+      background: url('https://images.unsplash.com/photo-1543005472-1b1d37fa4eae?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=maxim-tajer-x3S1aGQNgro-unsplash.jpg') repeat;
+      animation: moveFlames 10s linear infinite;
     }
     
-    @keyframes moveMagma {
+    @keyframes moveFlames {
       0% {
         background-position: 0% 0%;
       }
