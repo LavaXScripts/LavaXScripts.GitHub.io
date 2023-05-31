@@ -64,7 +64,7 @@
       background-color: #555;
     }
     
-    /* Moving Background with Rotating Colors */
+    /* Moving Background with Moving Magma */
     .moving-background {
       position: fixed;
       top: 0;
@@ -72,14 +72,18 @@
       width: 100%;
       height: 100%;
       z-index: -1;
-      animation: rotateColors 10s linear infinite;
+      background: repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255, 0, 0, 0.5) 5px, rgba(255, 0, 0, 0.5) 10px);
+      background-size: 10px 10px;
+      animation: moveMagma 10s linear infinite;
     }
     
-    @keyframes rotateColors {
-      0% { background-color: rgb(255, 0, 0); }
-      33% { background-color: rgb(0, 255, 0); }
-      66% { background-color: rgb(0, 0, 255); }
-      100% { background-color: rgb(255, 0, 0); }
+    @keyframes moveMagma {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
     }
     
     /* Bottom bar styles */
