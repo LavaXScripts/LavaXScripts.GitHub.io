@@ -2,14 +2,14 @@
 <html>
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9BESVXRG1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9BESVXRG1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        gtag('config', 'G-T9BESVXRG1');
-    </script>
+  gtag('config', 'G-T9BESVXRG1');
+</script>
     <title>LavaX Script</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
@@ -18,7 +18,7 @@
             color: red;
             font-size: 24px;
         }
-
+        
         .button {
             position: fixed;
             top: 50%;
@@ -32,33 +32,6 @@
             border-radius: 4px;
             cursor: pointer;
         }
-
-        /* Added styles for background blur */
-        body:before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-image: url(background-image.jpg); /* Replace "background-image.jpg" with the actual background image URL */
-            background-size: cover;
-            filter: blur(10px);
-        }
-
-        /* Added styles for the maintenance text */
-        .maintenance-text {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: red;
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            z-index: 1;
-        }
     </style>
     <style>
         body {
@@ -69,22 +42,21 @@
     </style>
 </head>
 <body>
-    <div class="maintenance-text">Down For Maintenance</div> <!-- Added the maintenance text -->
     <h1>Want LavaX? Pay For It Here Only 5 Robux!</h1>
-    <p>First go into Pls Donate on Roblox, then go to the offline donation button on the side of your screen. Now type in the user LavaXScripts after that when you see his stand donate 5 Robux. After that, send a message to LavaXScripts@gmail.com that says you donated to him and your username so I can verify. Then I will send you the script through mail. Those are all the steps.</p>
+    <p>First go into Pls Donate on roblox, Then go to the offline donation button on the side of your screen. Now type in the user LavaXScripts after that when you see his stand donate 5 robux. After that send a message to LavaXScripts@gmail.com that says you donated to him and your username so i can verify then i will send you the script through mail those are all the steps</p>
     <a href="https://raw.githubusercontent.com/LavaXScripts/LavaXPublic/main/Loadstring" class="button">LavaX Free (Supports Roblox Bedwars Only)</a>
     <script>
         function createFloatingText() {
             var text = document.createElement('div');
             text.className = 'floating-text';
             text.innerText = 'Want LavaX? BUY IT HERE!';
-
+            
             // Set initial position
             var posX = Math.random() * (window.innerWidth - text.offsetWidth);
             var posY = Math.random() * (window.innerHeight - text.offsetHeight);
             text.style.left = posX + 'px';
             text.style.top = posY + 'px';
-
+            
             // Add animation
             text.animate(
                 [
@@ -98,11 +70,11 @@
                     iterations: Infinity
                 }
             );
-
+            
             // Append text to the body
             document.body.appendChild(text);
         }
-
+        
         // Create floating texts every second
         setInterval(createFloatingText, 1000);
     </script>
